@@ -9,12 +9,15 @@ h1 {
     margin:0;
     padding: 18px;
     text-align: center;
-    -webkit-text-shadow: 3px 2px rgba(137,137,137,0.7);
-    -moz-text-shadow: 3px 2px rgba(137,137,137,0.7);
-    text-shadow: 3px 2px rgba(100,100,100,0.7);
+    -webkit-text-shadow: 3px 3px #999999;
+    -moz-text-shadow: 3px 3px #999999;
+    text-shadow: 3px 3px #999999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#header {
+.header {
     width: 100%;
+    background: url('resources/bannerbg.png');
+    text-align: center;
 }
 .content {
     width: 100%;
@@ -23,9 +26,9 @@ h1 {
     background: url('resources/background.png') center center;
 }
 .container {
-    border: 3px solid gray;
-    border-radius: 15px;
-    width: 80%;
+    border: 4px solid gray;
+    border-radius: 20px;
+    width: 800px;
     margin: 0 auto;
     overflow:hidden;
 
@@ -33,11 +36,21 @@ h1 {
 .right-side {
     float: right;
     height: 100%;
-    width: 24%;
+    width: 250px;
+    background-color: #A2B964;
+}
+.right-side .overview {
+    padding: 10pt;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.right-side .overview dd {
+    margin-bottom: 10pt;
 }
 .main-side {
     height: 100%;
-    width: 76%;
+    width: 550px;
 }
 
 .container .top-banner {
@@ -47,18 +60,17 @@ h1 {
 }
 .container .top-banner span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 62px;
+    font-size: 48pt;
     color: red;
     font-weight: bold;
 }
 .container .comment-section {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
 }
 .container .comment-section .comment {
-    width: 40%;
-    margin: 15px;
+    width: 46%;
+    margin:2%;
 }
 .container .comment-section .commentator {
     display: flex;
@@ -75,6 +87,23 @@ h1 {
     padding-right: 5px;
 }
 .container .comment-section .comment q {
-    font-size: 8px;
+    font-size: 8pt;
     font-weight: bold;
+}
+footer {
+    background-color: #A2B964;
+    width: 100%;
+    position: relative;
+    bottom: -1px;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+}
+.validators {
+    position: fixed;
+    right: 20;
+    bottom: 20;
+    float:right;
+    opacity: 0.5;
 }
