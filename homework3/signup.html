@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TMNT - Rancid Tomatoes</title>
+
+    <meta charset="utf-8" />
+
+    <link href="images/heart.gif" type="image/gif" rel="shortcut icon" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/nerdluv.png" alt="banner logo" /> <br />
+      where meek geeks meet
+    </header>
+
+    <fieldset>
+      <legend>New User Singup:</legend>
+      <div class="row">
+        <div class="column"><label class="label-bold">Name:</label></div>
+        <div class="column"><input type="text" name="name" /></div>
+      </div>
+      <div class="row">
+        <div class="column"><label class="label-bold">Gender:</label></div>
+        <div class="column">
+          <label><input type="radio" name="gender" value="M" />Male</label>
+          <label> <input type="radio" name="gender" value="F" />Female </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column"><label class="label-bold">Age:</label></div>
+        <div class="column">
+          <input class="input-size-small" type="text" name="age_from" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label class="label-bold">Personality type:</label>
+        </div>
+        <div class="column">
+          <input class="input-size-small" type="text" name="type" />
+          <span class="msg">
+            (<span class="msg-color-red">Don't know your type?</span>)
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column"><label class="label-bold">Favorite OS:</label></div>
+        <div class="column">
+          <select name="fav_os">
+            <option>Windows</option>
+            <option>Linux</option>
+            <option selected>MAC</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column"><label class="label-bold">Seeking age:</label></div>
+        <div class="column">
+          <input
+            class="input-size-small"
+            type="text"
+            name="seeking_age_from"
+            placeholder="min"
+          />
+          to
+          <input
+            class="input-size-small"
+            type="text"
+            name="seeking_age_until"
+            placeholder="max"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <input type="submit" name="Signup" value="Sign Up" />
+      </div>
+    </fieldset>
+
+    <p>
+      This page is for single nerds to meet and date each other! Type in your
+      personal information and wait for the nerdly luv to begin! Thank you for
+      using our site.
+    </p>
+    <footer>
+      <hr />
+      <p>Results and page (C) Copyright NerdLuv Inc.</p>
+
+      <ul>
+        <li>
+          <a href="../index.html">
+            <img src="images/back.gif" alt="icon" /> Back to front page
+          </a>
+        </li>
+      </ul>
+
+      <a href="https://webster.cs.washington.edu/validate-html.php">
+        <img src="images/w3c-html5.png" alt="Valid HTML" />
+      </a>
+      <a href="https://webster.cs.washington.edu/validate-css.php">
+        <img src="images/w3c-css.png" alt="Valid CSS" />
+      </a>
+    </footer>
+  </body>
+</html>
