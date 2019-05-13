@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Decorator</title>
+    <link href="decoratemytext.css" type="text/css" rel="stylesheet" />
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <!-- link to your script file here -->
+
+</head>
+
+<body>
+    <h1>Text Decorator</h1>
+
+    <div>
+        <img src="decorated.gif" alt="very decorated!" />
+    </div>
+
+    <div id="textField">
+        <div class="text">Text</div>
+        <textarea name="userInput" id="txt_area" cols="30" rows="4"></textarea>
+    </div>
+
+    <div id="decoration">
+        <div class="text">Decoration</div>
+        <div class="targ">
+            <button class="bdButton" onclick="helloWorld()">Bigger Decorations!</button>
+        </div>
+        <div class="targ"> 
+            <input id ="myCheck" type="checkbox" onchange="changeCheck()">
+            <span>Bling</span>
+        </div>
+
+        <div class="targ">
+            <button onclick="toLatinBttn()">Pig Latin</button>
+        </div>
+
+        <div class="targ">
+            <button onclick="malkovich()">Malkovitch</button>
+        </div>
+    </div>
+
+    <script src="decoratemytext.js"></script>
+</body>
+
+</html>
