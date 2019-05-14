@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="ascii.css">
+    <title>Homework Assignment 8: ASCIImation</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <p class="header">CSE 190 M ASCII Animation Viewer</p>
+        </div>
+
+        <div id="content">
+            <textarea name="animationView" id="anima" cols="80" rows="20"></textarea>
+        </div>
+
+        <div id="controls">
+            <div class="playControl">
+                <p class="control-title">Play Controls:</p>
+                <button class="start" onclick="start()">Start</button>
+                <button class="stop" onclick="stopAnime()">Stop</button>
+            </div>
+            <div class="animation">
+                <p class="control-title">Animation:</p>
+                <select name="animation" id="animaOption" onchange="animeChange()">
+                    <option value="blank" seleced >Blank</option>
+                    <option value="custom" >Custom</option>
+                    <option value="exercise">Exercise</option>
+                    <option value="juggler">Juggler</option>
+                    <option value="bike">Bike</option>
+                    <option value="dive">Dive</option>
+                </select>
+            </div>
+            <div class="size">
+                <p class="control-title">Size:</p>
+                <select name="size" id="animaSize" onchange="sizeChange()">
+                    <option value="tiny">Tiny</option>
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extra">Extra Large</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </div>
+            <div class="speed">
+                <p class="control-title">Speed:</p>
+                <input type="checkbox" onchange="speedChange()" id="turboChange">
+                <span>Turbo</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="animations.js"></script>
+    <script src="ascii.js"></script>
+</body>
+
+</html>

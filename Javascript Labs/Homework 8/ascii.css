@@ -1,0 +1,44 @@
+body {
+    background-color: #CCCCFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    font-size: 32pt;
+    font-weight: bold;
+    margin:0;
+    padding:0;
+}
+
+#content textarea {
+    font: 12pt bold monospace;
+    height: 400px;
+    width: 600px;
+}
+#controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#controls div {
+    margin-left: 40px;
+    border: 5px solid black;
+    text-align: center;
+    vertical-align: center;
+    padding: 5px;
+}
+
+#controls div .control-title {
+    position: relative;
+    margin-top: -18px;
+    background-color: #CCCCFF;
+    margin-bottom: 10px;
+    text-align: initial;
+    z-index: 2;
+}
