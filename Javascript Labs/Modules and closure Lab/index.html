@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <button onclick="rudyTimer()">Call me!</button>
+
+        <div id="phase2">
+            <div>
+                <span>Account Name</span>
+                <input type="text" id="accountName"/>
+            </div>
+            <div>
+                <span>Deposit</span>
+                <input type="text" id="deposit">
+            </div>
+
+            <button onclick="createAccount()">Create new Account</button>
+
+            <textarea name="accountList" id="accountList" cols="50" rows="20"></textarea>
+        </div>
+
+    </div>
+    <script src="rudy.js"></script>
+    <script src="account.js"></script>
+</body>
+
+</html>
