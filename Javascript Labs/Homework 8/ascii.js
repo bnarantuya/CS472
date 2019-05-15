@@ -1,28 +1,18 @@
 
-
 var area = document.getElementById("anima");
 var isStarted = false;
 var current_animation = document.getElementById("animaOption");
 var startInterval = null;
 var speed = 250;
+var currentNum = 0;
 
 function start() {
     if (!isStarted) {
-        var currentArray = ANIMATIONS[current_animation].split('=====');
-        let currentNum = 0;
-        startInterval = setInterval(function () {
-            if (currentNum < currentArray.length) {
-                area.value = currentArray[currentNum];
-                currentNum++;
-            }
-            else 
-            currentNum = 0;
-        }, speed);
+        animator();
         isStarted = true;
     }
     else
         console.log("Already Started");
-
 }
 
 function stopAnime() {
@@ -34,6 +24,7 @@ function animeChange() {
     current = document.getElementById("animaOption");
     current_animation = current.value;
     stopAnime();
+    currentNum = 0;
 }
 
 function sizeChange() {
@@ -48,6 +39,26 @@ function sizeChange() {
 
 function speedChange() {
     var isTurbo = document.getElementById("turboChange").checked;
-    if (isTurbo) speed = 50;
-    else speed = 250;
+    if (isTurbo) {
+        speed = 50;
+        stopAnime();
+        animator();
+    }
+    else {
+        speed = 250;
+        stopAnime();
+        animator();
+    }
+}
+
+function animator() {
+    var currentArray = ANIMATIONS[current_animation].split('=====');
+    startInterval = setInterval(function () {
+        if (currentNum < currentArray.length) {
+            area.value = currentArray[currentNum];
+            currentNum++;
+        }
+        else
+            currentNum = 0;
+    }, speed);
 }
