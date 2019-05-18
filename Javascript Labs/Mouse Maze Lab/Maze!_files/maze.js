@@ -18,6 +18,7 @@ var events = {
         });
 
     },
+    
     startAgain: function () {
         $("body").keydown(function (event) {
             if (event.which == 83 && isStarted == false) {
